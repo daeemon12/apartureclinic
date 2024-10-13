@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: black;
+    --tertiary-color: gray;
+}
+
+.animation {
+    animation: fade-in 0.2s linear forwards;
+}
+
+.container {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.main {
+    overflow-y: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo h1 {
+    color: var(--secondary-color);
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.burger {
+    cursor: pointer;
+    position: absolute;
+    left: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.cancel {
+    cursor: pointer;
+    z-index: -1;
+}
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.menubar ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.nav-links {
+    display: none;
+}
+
+.main-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    overflow-y: hidden;
+    place-content: center;
+    margin: 0 1rem;
+}
+
+.icon img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.main-1 .texts {
+    font-size: 1.5rem;
+    overflow-y: hidden;
+    font-weight: lighter;
+    line-height: 140%;
+    margin-top: 4rem;
+}
+
+.main-2 {
+    margin: 0 1rem;
+    margin-top: 4rem;
+}
+
+.main-2 p {
+    color: rgb(31, 120, 221);
+    font-size: 1.2rem;
+}
+
+.capabilities, .locations {
+    color: rgb(29, 28, 28);
+}
+
+.capabilities {
+    margin-bottom: 2rem;
+}
+
+.locations {
+    margin-bottom: 4rem;
+}
+
+.email {
+    border-top: 1px solid rgb(218, 203, 203);
+    padding-top: 3rem;
+    color: rgb(29, 28, 28);
+    margin-bottom: 8rem;
+    width: 100%;
+}
+
+.email a {
+    color: rgb(31, 120, 221);
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.top,.middle{
+    margin: 0 1.5rem 2rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.top {
+    border-top: 1px solid var(--tertiary-color);
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+.top a {
+    text-decoration: none;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem 2rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.last {
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+    padding-top: 3rem;
+    border-top: 1px solid var(--tertiary-color);
+    margin-bottom: 4rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/*  MEDIA QUERIES   */
+
+@media (min-width: 475px){
+
+
+}
+
+@media (min-width: 640px){
+    .logo h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .main-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        overflow-y: hidden;
+        place-content: center;
+        margin: 3rem;
+    }
+
+    .icon img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        overflow: hidden;
+        margin-top: 4rem;
+    }
+    
+    .main-1 .texts {
+        font-size: 1.5rem;
+        overflow-y: hidden;
+        font-weight: lighter;
+        line-height: 140%;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .first-1 {
+        border-top: 1px solid var(--tertiary-color);
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        padding: 2rem 0;
+    }
+
+    .top,.middle{
+        margin: 0 1.5rem 2rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .top {
+        border: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .top a {
+        text-decoration: none;
+    }
+    
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem 2rem 1.5rem;
+        font-size: 1.1rem;
+        line-height: 130%;
+    }
+    
+    .last {
+        margin: 0 1.5rem;
+        font-size: 1.1rem;
+        color: var(--tertiary-color);
+        padding-top: 3rem;
+        border-top: 1px solid var(--tertiary-color);
+        margin-top: -7rem;
+        text-align: left;
+    }
+    
+    .footer a {
+        color: var(--primary-color);
+    }
+}
+
+@media (min-width: 1024px){
+   
+    .logo h1 {
+        margin-left: 2rem;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .cancel {
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links ul {
+        display: flex;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+    }
+
+    #active {
+        color: #ffd300;
+    }
+
+    .nav-links a:hover {
+        color: #ffd300;
+    }
+    
+
+}
+
+@media (min-width: 1280px){
+
+
+    .top,.middle{
+        margin: 0 1.5rem 2rem 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem 2rem 1.5rem;
+        font-size: 1.5rem;
+        line-height: 130%;
+    }
+    
+    .last {
+        margin: 0 1.5rem;
+        font-size: 1.5rem;
+        color: var(--tertiary-color);
+        padding-top: 3rem;
+        border-top: 1px solid var(--tertiary-color);
+        margin-top: -7rem;
+        text-align: left;
+    }
+}
+@media (min-width: 1536px){
+    
+}
