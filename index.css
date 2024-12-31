@@ -4,7 +4,6 @@
     padding: 0;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
 }
 
 html {
@@ -13,37 +12,69 @@ html {
 
 :root {
     --primary-color: #fff;
-    --secondary-color: black;
-    --tertiary-color: gray;
+    --secondary-color:black;
+    --tertiary-color: #22f730;
 }
 
 .container {
     width: 100%;
 }
 
+.nav-links {
+    display: block;
+}
+
+.nav-links ul {
+    display: block;
+}
+
+.nav-links ul li {
+    margin: 1rem;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    margin: 0.4rem;
+    text-align: center;
+}
+
+#active {
+    color: var(--primary-color);
+}
+
+.nav-links a:hover {
+    color: #22f730;
+}
+
 .animation {
     animation: fade-in 0.2s linear forwards;
 }
-.animation-1 {
-    animation: fade-out 0.2s linear forwards;
-}
-
 
 .main {
-    background-image: url("images/A3-POSTERS2.jpg");
-    background-position: bottom;
+    /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
+    background-position: -3rem;
     background-size: cover;
     width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow-y: hidden;
+    height: 50vh;
+}
+
+.main img {
+    width: 100%;
+    height: 50vh;
+    object-fit: fill;
+    object-position: center;
+    position: absolute;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.1rem;
     position: relative;
     top: -5rem;
     animation: drop-down 1s ease forwards;
@@ -53,169 +84,123 @@ nav {
     color: var(--primary-color);
 }
 
-.header h1 {
-    position: absolute;
-    top: 25rem;
-    color: var(--primary-color);
-    width: 80%;
-    margin-left: 1rem;
-    font-size: 3rem;
-    font-weight: 900;
+.main-1 {
+    background-image: url(images/drvin/APATURE\ MESSAGE.gif);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.services .ff{
+    /* width: 100%;
+    background-color: rgb(22, 21, 21); */
+    /* background-image: url(images/drvin/SERVICES-N.jpg); */
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+}
+
+.services .ss {
+    margin-top: -20px;
+    height: 330vh;
+}
+
+.services .videos {
+    width: 90%;
+    margin: 0 auto;
     overflow-y: hidden;
-    margin-top: -4rem;
-}
-
-.icons {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.burger {
-    cursor: pointer;
+    height: 390vh;
     position: absolute;
-    right: 0rem;
+    top: 120vh;
+    left: 5%;
 }
 
-.cancel {
-    cursor: pointer;
-    z-index: -1;
+.services .videos video {
+    width: 400px;
+    overflow-y: hidden;
+    margin: 0 auto;
 }
 
-.projects {
-    width: 100%;
-    margin-bottom: 8rem;
-}
-
-.first {
-    margin: 2rem 0.7rem;
-}
-
-.projects  h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0.5rem 0.4rem;
-}
-
-.projects p {
-    font-size: 1.2rem;
-    margin: 0 0 1.5rem 0.7rem;
-}
-
-.box {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.box img {
-    width: 96%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    /* object-position: top; */
-    text-align: center;
-    margin: 0 2%;
-    transition: filter 0.4s ease-out;
-}
-
-.box img:hover {
-    filter: brightness(30%);
-}
-
-.menu {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--secondary-color);
-    position: absolute;
-    top: 0;
-    display: none;
-}
-
-.menubar ul {
-    height: 100vh;
+.services .videos .first {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.menubar ul a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-}
-
-.nav-links {
-    display: none;
-}
-
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 110vh;
     justify-content: space-between;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    gap: 2rem;
+    margin-top: 100px;
 }
-
-.top,.middle{
-    margin: 0 1.5rem 2rem 1.5rem;
-    font-size: 1.5rem;
-    line-height: 130%;
-}
-
-.top {
-    border-top: 1px solid var(--tertiary-color);
-    margin-top: 4rem;
-    padding-top: 2rem;
-}
-
-.top a {
-    text-decoration: none;
-}
-
-.bottom {
+.services .second {
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem 2rem 1.5rem;
-    font-size: 1.5rem;
-    line-height: 130%;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 2rem;
+}
+.services .third {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 2rem;
+    margin-bottom: 170px;
 }
 
-.last {
-    margin: 0 1.5rem;
-    font-size: 1.2rem;
-    color: var(--tertiary-color);
-    padding-top: 3rem;
-    border-top: 1px solid var(--tertiary-color);
-    margin-top: -7rem;
+.main-2 {
+    background-image: url(images/drvin/Testimonials.gif);
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: contain;
+    margin-top: 5vh;
 }
 
-.footer a {
-    color: var(--primary-color);
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
+    .contacts {
+        background-image: url(images/drvin/new\ contact.jpg);
+        width: 100%;
+        height: 35vh;
+        background-position: center;
+        background-size: contain;
+        margin-top: 20px;
     }
 
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes fade-out {
-    0% {
-        opacity: 1;
+    .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    100%{
-        opacity: 0;
+    .contacts .numbers {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        font-size: x-small;
+        font-family: "Poppins", serif;
+        margin: 120px 0 0 5px;
     }
-}
+
+    .contacts .numbers a {
+        text-decoration: none;
+        color: #fff;
+        padding-right: 30px;
+    }
+    
+    .contacts .socials {
+        display: flex;
+        width: 100px;
+        justify-content: flex-start;
+        margin: 20px 0 0 0px;
+    }
+    
+    .contacts img {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+
+
 @keyframes drop-down {
     0% {
         top: -5rem;
@@ -229,262 +214,447 @@ nav {
 
 
 
-
 /*  MEDIA QUERIES   */
 
-@media (min-width: 475px){
-
-    .projects  h3{
-        font-size: 1.2rem;
-        margin: 1rem 0 1rem 1.5rem;
-    }
-
-    .projects p {
-        margin: 0 0 1rem 1.5rem;
-    }
-
-    .box {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .box img {
-        width: 96%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        text-align: center;
-        margin: 0 0.5rem;
-        transition: filter 0.5s ease-out;
-    }
+@media (min-width: 375px){
+    .nav-links ul li {
+        margin: 1rem;
+        border: 2px solid var(--tertiary-color);
+        border-radius: 2rem;
+    } 
+    
 }
 
 @media (min-width: 640px){
-
-    
-    .logo h1 {
-        font-size: 3rem;
-    }
-    
-
-    .projects  h3{
-        font-size: 1.2rem;
-        margin: 1rem 0 1rem 1.5rem;
-    }
-
-    .projects p {
-        margin: 0 0 1rem 1.5rem;
-    }
-
-    .projects-img {
+    .nav-links ul li {
         margin: 1rem;
+        border: 2px solid var(--tertiary-color);
+        border-radius: 2rem;
+    } 
+    
+    .nav-links a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: var(--primary-color);
+        margin: 0.6rem;
+        text-align: center;
     }
 
-    .box {
+    .main {
+        /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
+        background-position: -3rem;
+        background-size: cover;
         width: 100%;
+        height: 70vh;
+    }
+
+    .main img {
+        width: 100%;
+        height: 70vh;
+        object-fit: fill;
+        object-position: center;
+        position: absolute;
+    }
+
+    .services .ff{
+        /* width: 100%;
+        background-color: rgb(22, 21, 21); */
+        /* background-image: url(images/drvin/SERVICES-N.jpg); */
+        background-size: contain;
+        width: 100%;
+        height: 140vh;
+    }
+    
+    .services .ss {
+        margin-top: -20px;
+        height: 0;
+    }
+
+    .services .videos {
+        width: 90%;
+        margin: 0 auto;
+        overflow-y: hidden;
+        height: 140vh;
+        position: absolute;
+        top: 120vh;
+        left: 5%;
+    }
+    
+    .services .videos video {
+        width: 400px;
+        overflow-y: hidden;
         margin: 0 auto;
     }
-
-    .box img {
-        width: 95%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        text-align: center;
-        margin: 0 1.5rem;
-        transition: filter 0.5s ease-out;
+    
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 200px;
     }
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 2rem;
+    }
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 2rem;
+        margin-bottom: 170px;
+    }
+
+    .main-2 {
+        background-image: url(images/drvin/Testimonials.gif);
+        width: 100%;
+        height: 40vh;
+        background-position: center;
+        background-size: contain;
+        margin-top: 5vh;
+    }
+    
+    .contacts {
+        background-image: url(images/drvin/new\ contact.jpg);
+        width: 100%;
+        height: 50vh;
+        background-position: center;
+        background-size: contain;
+        margin-top: 20px;
+    }
+
+    .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contacts .numbers {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        font-size: small;
+        font-family: "Poppins", serif;
+        margin: 180px 0 0 0px;
+    }
+
+    .contacts .numbers a {
+        text-decoration: none;
+        color: #fff;
+        padding-right: 30px;
+    }
+    
+    .contacts .socials {
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        margin: 20px 0 0 0px;
+    }
+    
+    .contacts img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    
 }
 
 @media (min-width: 768px){
-
-    .projects-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-content: center;
-        place-items: center;
-        text-align: center;
-        margin: 0 1rem 0 1rem;
-
-    }
-
-
-    .box img {
-        width: 95%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        text-align: center;
-        margin: 0 auto;
-        transition: filter 0.5s ease-out;
-    }
-
-    .box h3,p {
-        text-align: left;
-    }
-
-    .footer {
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-around;
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
-    }
-
-    .first-1 {
-        border-top: 1px solid var(--tertiary-color);
-        display: grid;
-        grid-template-columns: 1.2fr 1fr 1fr;
-        padding: 2rem 0;
-    }
-
-    .top,.middle{
-        margin: 0 1.5rem 2rem 1.5rem;
-        font-size: 1.1rem;
-    }
+    .nav-links ul li {
+        margin: 1rem;
+        border: 2px solid var(--tertiary-color);
+        border-radius: 2rem;
+    } 
     
-    .top {
-        border: none;
-        margin-top: 0;
-        padding-top: 0;
-    }
-    
-    .top a {
+    .nav-links a {
         text-decoration: none;
+        font-size: 1.1rem;
+        color: var(--primary-color);
+        margin: 0.8rem;
+        text-align: center;
+    }
+
+    .main {
+        /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
+        background-position: -3rem;
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .main img {
+        width: 100%;
+        height: 90vh;
+        object-fit: fill;
+        object-position: center;
+        position: absolute;
+    }
+
+    .main-1 {
+        background-image: url(images/drvin/APATURE\ MESSAGE.gif);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .services .ff{
+        /* width: 100%;
+        background-color: rgb(22, 21, 21); */
+        /* background-image: url(images/drvin/SERVICES-N.jpg); */
+        background-size: contain;
+        width: 100%;
+        height: 180vh;
     }
     
-    .bottom {
+    .services .ss {
+        margin-top: -20px;
+        height: 0;
+    }
+
+    .services .videos {
+        width: 90%;
+        margin: 0 auto;
+        overflow-y: hidden;
+        height: 140vh;
+        position: absolute;
+        top: 200vh;
+        left: 5%;
+    }
+
+    .services .videos video {
+        width: 400px;
+        overflow-y: hidden;
+        margin: 0 auto;
+    }
+    
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 200px;
+    }
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 2rem;
+    }
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 2rem;
+        margin-bottom: 170px;
+    }
+
+    .main-2 {
+        background-image: url(images/drvin/Testimonials.gif);
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .contacts {
+        background-image: url(images/drvin/new\ contact.jpg);
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: contain;
+        margin-top: 20px;
+    }
+
+    .icons {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        margin: 0 1.5rem 2rem 1.5rem;
-        font-size: 1.1rem;
-        line-height: 130%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contacts .numbers {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        font-size: medium;
+        font-family: "Poppins", serif;
+        margin: 200px 0 0 30px;
+    }
+
+    .contacts .numbers a {
+        text-decoration: none;
+        color: #fff;
+        padding-right: 30px;
     }
     
-    .last {
-        margin: 0 1.5rem;
-        font-size: 1.1rem;
-        color: var(--tertiary-color);
-        padding-top: 3rem;
-        border-top: 1px solid var(--tertiary-color);
-        margin-top: -7rem;
-        text-align: left;
+    .contacts .socials {
+        display: flex;
+        width: 100px;
+        justify-content: flex-start;
+        margin: 70px 0 0 20px;
     }
     
-    .footer a {
-        color: var(--primary-color);
+    .contacts img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
     }
+   
 }
 
+
 @media (min-width: 1024px){
-   
-    .logo h1 {
-        margin-left: 2rem;
-    }
-
-    .header h1 {
-        position: absolute;
-        top: 25rem;
-        color: var(--primary-color);
-        width: 70%;
-        margin-left: 2rem;
-        margin-top: -2rem;
-        font-size: 4rem;
-        font-weight: 600;
-        overflow-y: hidden;
-    }
-
-    .burger {
-        display: none;
-    }
-
-    .cancel {
-        display: none;
-    }
-
-    .nav-links {
-        display: flex;
-    }
-
-    .nav-links ul {
-        display: flex;
-    }
 
     .nav-links ul li {
         margin: 1rem;
+        border: 2px solid var(--tertiary-color);
+        border-radius: 2rem;
+    } 
+
+    .main-1 {
+        background-image: url(images/drvin/APATURE\ MESSAGE.gif);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
     }
 
-    .nav-links a {
+    .main img {
+        width: 100%;
+        height: 100vh;
+        object-fit: fill;
+        object-position: center;
+        position: absolute;
+    }
+
+    .services .ff{
+        /* width: 100%;
+        background-color: rgb(22, 21, 21); */
+        /* background-image: url(images/drvin/SERVICES-N.jpg); */
+        background-size: contain;
+        width: 100%;
+        height: 180vh;
+    }
+    
+    .services .ss {
+        margin-top: -20px;
+        height: 0;
+    }
+
+    .services .videos {
+        width: 90%;
+        margin: 0 auto;
+        overflow-y: hidden;
+        height: 170vh;
+        position: absolute;
+        top: 210vh;
+        left: 5%;
+    }
+
+    .services .videos video {
+        width: 400px;
+        overflow-y: hidden;
+        margin: 0 auto;
+    }
+    
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 200px;
+    }
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 2rem;
+    }
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 2rem;
+        margin-bottom: 170px;
+    }
+
+    .main-2 {
+        background-image: url(images/drvin/Testimonials.gif);
+        width: 100%;
+        height: 80vh;
+        background-position: center;
+        background-size: contain;
+        margin-top: 5vh;
+    }
+    
+    .contacts {
+        background-image: url(images/drvin/new\ contact.jpg);
+        width: 100%;
+        height: 80vh;
+        background-position: center;
+        background-size: contain;
+        margin-top: 20px;
+    }
+
+    .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contacts .numbers {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        font-size: medium;
+        font-family: "Poppins", serif;
+        margin: 270px 0 0 20px;
+    }
+
+    .contacts .numbers a {
         text-decoration: none;
-       
-        font-size: 1.5rem;
-        color: var(--primary-color);
-    }
-
-    #active {
-        color: #ffd300;
-    }
-
-    .nav-links a:hover {
-        color: #ffd300;
+        color: #fff;
+        padding-right: 150px;
     }
     
-
-    .box img {
-        width: 92%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        text-align: left;
-        transition: filter 0.5s ease-out;
+    .contacts .socials {
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        margin: 100px 0 0 10px;
     }
-
     
-
+    .contacts img {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
 }
 
 @media (min-width: 1280px){
 
-    .header h1 {
-        position: absolute;
-        top: 25rem;
-        color: var(--primary-color);
-        width: 60%;
-        margin-left: 2rem;
-        margin-top: -6rem;
-        font-size: 4.5rem;
-        font-weight: 500;
-        overflow-y: hidden;
-    }
-
-    .box img {
-        width: 94%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        text-align: left;
-        transition: filter 0.5s ease-out;
-    }
-
-    .top,.middle{
-        margin: 0 1.5rem 2rem 1.5rem;
-        font-size: 1.5rem;
-    }
-
-    .bottom {
-        display: flex;
-        flex-direction: column;
-        margin: 0 1.5rem 2rem 1.5rem;
-        font-size: 1.5rem;
-        line-height: 130%;
-    }
-    
-    .last {
-        margin: 0 1.5rem;
-        font-size: 1.5rem;
-        color: var(--tertiary-color);
-        padding-top: 3rem;
-        border-top: 1px solid var(--tertiary-color);
-        margin-top: -7rem;
-        text-align: left;
-    }
+    .nav-links ul li {
+        margin: 1rem;
+        border: 2px solid var(--tertiary-color);
+        border-radius: 2rem;
+    } 
 }
 @media (min-width: 1536px){
     
