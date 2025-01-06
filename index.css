@@ -20,25 +20,17 @@ html {
     width: 100%;
 }
 
-.nav-links {
-    display: block;
-}
-
-.nav-links ul {
-    display: block;
-}
-
 .nav-links ul li {
-    margin: 1rem;
-    border: 2px solid var(--tertiary-color);
-    border-radius: 2rem;
+    margin: 0.5rem;
+    border: 1px solid red;
+    border-radius: 1rem;
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: var(--primary-color);
-    margin: 0.4rem;
+    margin: 0.3rem;
     text-align: center;
 }
 
@@ -50,35 +42,13 @@ html {
     color: #22f730;
 }
 
-.animation {
-    animation: fade-in 0.2s linear forwards;
-}
-
-.main {
-    /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
-    background-position: -3rem;
-    background-size: cover;
-    width: 100%;
-    height: 40vh;
-}
-
-.main img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40vh;
-    background-size: cover;
-    object-position: center;
-    position: absolute;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.1rem;
+    padding: 0.05rem;
     position: relative;
-    top: -5rem;
+    top: -11rem;
     animation: drop-down 1s ease forwards;
 }
 
@@ -86,40 +56,49 @@ nav {
     color: var(--primary-color);
 }
 
-.main-1 {
-    background-image: url(APATURE\ MESSAGE.gif);
-    width: 100%;
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
+.animation {
+    animation: fade-in 0.2s linear forwards;
 }
 
-.services .ff{
-    background-image: url(SERVICES-N.jpg);
+.main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container .story {
+    background-image: url(APATURE\ MESSAGE.gif);
+    background-position: center;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
+    margin-top: -100px;
+}
+
+.services .ff {
+    object-fit: cover;
 }
 
 .services .ss {
-    background-image: url(service\ ss.png);
-    margin-top: -20px;
-    height: 380vh;
+    margin-top: -10px;
+    height: 320vh;
 }
 
 .services .videos {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
     margin: 0 auto;
-    overflow-y: hidden;
-    height: 390vh;
+    height: 380vh;
     position: absolute;
-    top: 100vh;
-    left: 5%;
+    top: 80vh;
 }
 
 .services .videos video {
-    width: 400px;
-    overflow-y: hidden;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -130,6 +109,7 @@ nav {
     gap: 2rem;
     margin-top: 100px;
 }
+
 .services .second {
     display: flex;
     flex-direction: column;
@@ -137,6 +117,7 @@ nav {
     margin-top: 30px;
     gap: 2rem;
 }
+
 .services .third {
     display: flex;
     flex-direction: column;
@@ -145,543 +126,829 @@ nav {
     margin-bottom: 170px;
 }
 
-.main-2 {
-    background-image: url(Testimonials.gif);
+.testimony img{
     width: 100%;
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
 .contacts {
     background-image: url(new\ contact.jpg);
-    width: 100%;
-    height: 30vh;
-    background-position: center;
     background-size: cover;
+    background-position: left;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
 }
 
-.icons {
+.contacts .icons {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-shrink: shrink;
+    margin-top: 150px;
+    margin-left: 15%;
 }
 
-.contacts .numbers {
-    width: 100%;
-    color: #fff;
+.icons .numbers {
     display: flex;
     justify-content: flex-start;
-    font-size: 9px;
-    margin: 110px 0 0 5px;
+    gap: 10px;
 }
-.contacts .numbers a {
+
+.icons .numbers p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.icons .numbers a {
     text-decoration: none;
     color: #fff;
-    padding-right: 30px;
 }
 
-.contacts .socials {
+.icons .socials {
     display: flex;
-    width: 100px;
     justify-content: flex-start;
-    margin: 10px 0 0 0px;
+    gap: 5px;
+    width: 12%;
+    margin-top: 10px;
 }
-
-.contacts img {
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-}
-
 
 @keyframes drop-down {
     0% {
-        top: -5rem;
+        top: -21rem;
     }
 
     100%{
-        top: 0;
+        top: -11rem;
     }
 }
 
-
-
-
-/*  MEDIA QUERIES   */
-
-@media (min-width: 375px){
+@media (min-width: 375px) {
     .nav-links ul li {
-        margin: 1rem;
-        border: 2px solid var(--tertiary-color);
-        border-radius: 2rem;
-    } 
-    
-}
-
-@media (min-width: 640px){
-    .nav-links ul li {
-        margin: 1rem;
-        border: 2px solid var(--tertiary-color);
-        border-radius: 2rem;
-    } 
-    
+        margin: 0.5rem;
+        border: 1px solid blue;
+        border-radius: 1rem;
+    }
+  
     .nav-links a {
         text-decoration: none;
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         color: var(--primary-color);
-        margin: 0.6rem;
+        margin: 0.3rem;
         text-align: center;
     }
-
-    .main {
-        /* background-image: url("APATURE\ WEB_1.gif"); */
-        background-position: -3rem;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -13rem;
+        animation: drop-down 1s ease forwards;
     }
-
+    
+    .logo h1 {
+        color: var(--primary-color);
+    }
+    
+    .animation {
+        animation: fade-in 0.2s linear forwards;
+    }
+    
     .main img {
         width: 100%;
-        height: 70vh;
-        object-fit: fill;
-        object-position: center;
-        position: absolute;
+        height: auto;
+        object-fit: cover;
     }
-
-    .services .ff{
-        background-image: url(SERVICES-N.jpg);
+    
+    .container .story {
+        background-image: url(APATURE\ MESSAGE.gif);
+        background-position: center;
         background-size: cover;
-        width: 100%;
-        height: 50vh;
-    }
-    
-    .services .ss {
-        background-image: url(service\ ss.png);
-        margin-top: -20px;
-        height: 50vh;
-    }
-
-    .services .videos {
-        width: 90%;
-        margin: 0 auto;
-        overflow-y: hidden;
-        height: 140vh;
-        position: absolute;
-        top: 90vh;
-        left: 5%;
-    }
-    
-    .services .videos video {
-        width: 400px;
-        overflow-y: hidden;
-        margin: 0 auto;
-    }
-    
-    .services .videos .first {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2rem;
-        margin-top: 200px;
-    }
-    .services .second {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 30px;
-        gap: 2rem;
-    }
-    .services .third {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        gap: 2rem;
-        margin-bottom: 170px;
-    }
-
-    .main-2 {
-        background-image: url(Testimonials.gif);
         width: 100%;
         height: 40vh;
-        background-position: bottom;
-        background-size: contain;
-        background-repeat: repeat;
-        
+        margin-top: -100px;
+    }
+    
+    .services .ff {
+        object-fit: cover;
+    }
+    
+    .services .ss {
+        margin-top: -10px;
+        height: 320vh;
+    }
+    
+    .services .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 auto;
+        height: 380vh;
+        position: absolute;
+        top: 90vh;
+    }
+    
+    .services .videos video {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .services .videos .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 100px;
+    }
+    
+    .services .second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 2rem;
+    }
+    
+    .services .third {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 2rem;
+        margin-bottom: 170px;
+    }
+    
+    .testimony img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
     }
     
     .contacts {
         background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
         width: 100%;
-        height: 50vh;
-        background-position: center;
-        background-size: contain;
-        background-repeat: repeat;
+        height: 40vh;
+        object-fit: cover;
     }
-
-    .icons {
-        max-width: 300px;
-        min-width: 270px;
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        flex-shrink: shrink;
         justify-content: flex-start;
         align-items: flex-start;
-        position: absolute;
-        left: 11%;
-        top: 260%;
-        right: 80%;
-        flex-shrink: 1;
+        margin-top: 150px;
+        margin-left: 15%;
     }
-
-    .contacts .numbers {
-        max-width: 270px;
-        color: #fff;
+    
+    .icons .numbers {
         display: flex;
         justify-content: flex-start;
-        font-size: 12px;
-        margin: 110px 0 0 0px;
-        
-        flex-shrink: 1;
+        gap: 10px;
     }
-
-    .contacts .numbers a {
+    
+    .icons .numbers p {
+        font-size: 12px;
+        color: #fff;
+    }
+    
+    .icons .numbers a {
         text-decoration: none;
         color: #fff;
     }
     
-    .contacts .socials {
+    .icons .socials {
         display: flex;
-        width: 100px;
-        justify-content: space-between;
-        margin: 30px 0 0 0;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 12%;
+        margin-top: 10px;
     }
-    
-    .contacts img {
-        width: 30px;
-        height: 30px;
-    }
-    
-}
 
-@media (min-width: 768px){
-    .nav-links ul li {
-        margin: 1rem;
-        border: 2px solid var(--tertiary-color);
-        border-radius: 2rem;
-    } 
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
     
+        100%{
+            top: -11rem;
+        }
+    }
+}
+@media (min-width: 640px) {
+    .nav-links ul li {
+        margin: 0.5rem;
+        border: 1px solid pink;
+        border-radius: 1rem;
+    }
+
     .nav-links a {
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         color: var(--primary-color);
-        margin: 0.8rem;
+        margin: 0.3rem;
         text-align: center;
     }
-
-    .main {
-        /* background-image: url("APATURE\ WEB_1.gif"); */
-        background-position: -3rem;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -15rem;
+        animation: drop-down 1s ease forwards;
     }
-
-    .main img {
-        width: 100%;
-        height: 70vh;
-        object-fit: fill;
-        object-position: center;
+      
+    .services .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 auto;
+        height: 380vh;
         position: absolute;
+        top: 120vh;
+    }
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 150px;
+        margin-left: 11%;
     }
 
-    .main-1 {
+    .icons .numbers p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
+    
+        100%{
+            top: -15rem;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .nav-links ul li {
+        margin: 0.5rem;
+        border: 1px solid brown;
+        border-radius: 1rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--primary-color);
+        margin: 0.5rem;
+        text-align: center;
+    }
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -19rem;
+        animation: drop-down 1s ease forwards;
+    }
+
+    .container .story {
         background-image: url(APATURE\ MESSAGE.gif);
-        width: 100%;
-        height: 70vh;
         background-position: center;
         background-size: cover;
+        width: 100%;
+        height: 70vh;
+        margin-top: -100px;
     }
 
-    .services .ff{
-        background-image: url(SERVICES-N.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 80vh;
+    .services .ff {
+        object-fit: cover;
     }
     
     .services .ss {
-        background-image: url(service\ ss.png);
-        margin-top: -20px;
-        height: 90vh;
+        margin-top: -10px;
+        height: 80vh;
     }
-
+      
     .services .videos {
-        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
         margin: 0 auto;
-        overflow-y: hidden;
-        height: 140vh;
+        height: 200vh;
         position: absolute;
-        top: 140vh;
-        left: 5%;
+        top: 150vh;
+        left: 1rem;
+        right: 1rem;
     }
 
     .services .videos video {
-        width: 400px;
-        overflow-y: hidden;
+        width: 100%;
+        height: 200px;
         margin: 0 auto;
     }
-    
+
     .services .videos .first {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
-        margin-top: 200px;
+        gap: 1rem;
+        margin-top: 100px;
     }
+    
     .services .second {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 30px;
-        gap: 2rem;
+        gap: 1rem;
     }
+    
     .services .third {
         display: flex;
         flex-direction: row;
         margin-top: 30px;
-        gap: 2rem;
-        margin-bottom: 170px;
+        gap: 1rem;
     }
 
-    .main-2 {
-        background-image: url(Testimonials.gif);
-        width: 100%;
-        height: 50vh;
-        background-position: bottom;
-        background-size: contain;
-        background-repeat: repeat;
-    }
-    
     .contacts {
         background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
         width: 100%;
         height: 60vh;
-        background-position: center;
-        background-size: cover;  
-        background-repeat: repeat;   
-        padding: 1.8rem;  
+        object-fit: cover;
     }
-
-    .icons {
-        max-width: 350px;
-        min-width: 320px; 
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        position: absolute;
-        flex-shrink: 1;
-        left: 11%;
-        top: 375%;
-        right: 89%;
+        margin-top: 220px;
+        margin-left: 11%;
     }
 
-    .contacts .numbers {
-        max-width: 330px;
-        color: #fff;
-        display: flex;
-        flex: 0 0 auto;
-        flex-shrink: none;
-        justify-content: flex-start;
+    .icons .numbers p {
         font-size: 15px;
-        margin: 120px 0 0 0px;
-    }
-
-    .contacts .numbers a {
-        text-decoration: none;
         color: #fff;
     }
-    
-    .contacts .socials {
+
+    .icons .socials {
         display: flex;
-        width: 100px;
-        justify-content: space-between;
-        margin: 30px 0 0 0;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 10%;
+        margin-top: 10px;
     }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
     
-    .contacts img {
-        width: 33px;
-        height: 33px;
+        100%{
+            top: -19rem;
+        }
     }
-   
 }
-
-
-@media (min-width: 1024px){
-
+@media (min-width: 1024px) {
     .nav-links ul li {
-        margin: 1rem;
-        border: 2px solid var(--tertiary-color);
-        border-radius: 2rem;
-    } 
-
-    .main {
-        /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
-        background-position: -3rem;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
+        margin: 0.5rem;
+        border: 1px solid yellow;
+        border-radius: 1rem;
     }
 
-    .main img {
-        width: 100%;
-        height: 100vh;
-        background-size: contain;
-        object-position: center;
-        position: absolute;
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--primary-color);
+        margin: 0.5rem;
+        text-align: center;
+    }
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -24rem;
+        animation: drop-down 1s ease forwards;
     }
 
-    .main-1 {
+    .container .story {
         background-image: url(APATURE\ MESSAGE.gif);
-        width: 100%;
-        height: 100vh;
         background-position: center;
         background-size: cover;
+        width: 100%;
+        height: 70vh;
+        margin-top: -100px;
     }
 
-
-
-    .services .ff{
-        background-image: url(SERVICES-N.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
+    .services .ff {
+        object-fit: cover;
     }
     
     .services .ss {
-        background-image: url(service\ ss.png);
-        margin-top: -20px;
-        height: 80vh;
+        margin-top: -10px;
+        height: 70vh;
     }
-
+      
     .services .videos {
-        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
         margin: 0 auto;
-        overflow-y: hidden;
         height: 170vh;
         position: absolute;
-        top: 210vh;
-        left: 5%;
+        top: 190vh;
+        left: 1rem;
+        right: 1rem;
     }
 
     .services .videos video {
-        width: 400px;
-        overflow-y: hidden;
+        width: 100%;
+        height: 200px;
         margin: 0 auto;
     }
-    
+
     .services .videos .first {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
-        margin-top: 200px;
+        gap: 1rem;
+        margin: 50px auto;
     }
+    
     .services .second {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 30px;
-        gap: 2rem;
+        gap: 1rem;
+        margin: 0 auto 50px auto;
     }
+    
     .services .third {
         display: flex;
         flex-direction: row;
         margin-top: 30px;
-        gap: 2rem;
-        margin-bottom: 170px;
+        gap: 1rem;
+        margin: 0 auto;
     }
 
-    .main-2 {
-        background-image: url(Testimonials.gif);
-        width: 100%;
-        height: 80vh;
-        padding: 0 2rem;
-        background-position: bottom;
-        background-size: cover;
-        background-repeat: repeat;
-        aspect-ratio: (16, 9);
-    }
-    
     .contacts {
         background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
         width: 100%;
         height: 70vh;
-        background-position: center;
-        background-size: cover;
-        background-repeat: repeat;
-        padding: 1.8rem;
+        object-fit: cover;
     }
-
-    .icons {
-        max-width: 450px;
-        min-width: 420px;
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        position: absolute;
-        left: 11%;
-        top: 480%;
-        right: 80%;
+        margin-top: 260px;
+        margin-left: 11%;
     }
 
-    .contacts .numbers {
-        max-width: 420px;
-        color: #fff;
+    .icons .numbers {
         display: flex;
-        flex-shrink: 1;
         justify-content: flex-start;
-        font-size: 17px;   
-        margin: 110px 0 0 0px;
+        gap: 30px;
     }
 
-    .contacts .numbers a {
-        text-decoration: none;
+    .icons .numbers p {
+        font-size: 18px;
         color: #fff;
     }
-    
-    .contacts .socials {
+
+    .icons .socials {
         display: flex;
-        width: 100px;
-        justify-content: space-between;
-        margin: 30px 0 0 0;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 10%;
+        margin-top: 10px;
     }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
     
-    .contacts img {
-        width: 35px;
-        height: 35px;
-        padding: 5px;
+        100%{
+            top: -24rem;
+        }
     }
 }
-
-@media (min-width: 1280px){
-
+@media (min-width: 1280px) {
     .nav-links ul li {
-        margin: 1rem;
-        border: 2px solid var(--tertiary-color);
-        border-radius: 2rem;
-    } 
-}
-@media (min-width: 1536px){
-    
-}
+        margin: 0.5rem;
+        border: 1px solid aqua;
+        border-radius: 1rem;
+    }
 
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin: 0.9rem;
+        text-align: center;
+    }
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -30rem;
+        animation: drop-down 1s ease forwards;
+    }
+
+    .container .story {
+        background-image: url(APATURE\ MESSAGE.gif);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        margin-top: -100px;
+    }
+
+    .services .ff {
+        object-fit: cover;
+    }
+    
+    .services .ss {
+        margin-top: -10px;
+        height: 70vh;
+    }
+      
+    .services .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 auto;
+        height: 160vh;
+        position: absolute;
+        top: 200vh;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .services .videos video {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 100px;
+    }
+    
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+    
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+
+    .contacts {
+        background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 300px;
+        margin-left: 11%;
+    }
+
+    .icons .numbers {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .icons .numbers p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .icons .socials {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 11%;
+        margin-top: 14px;
+    }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
+    
+        100%{
+            top: -30rem;
+        }
+    }
+}
+@media (min-width: 1536px) {
+    .nav-links ul li {
+        margin: 0.5rem;
+        border: 1px solid gray;
+        border-radius: 1rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin: 0.9rem;
+        text-align: center;
+    }
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -36rem;
+        animation: drop-down 1s ease forwards;
+    }
+
+    .container .story {
+        background-image: url(APATURE\ MESSAGE.gif);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        margin-top: -100px;
+    }
+
+    .services .ff {
+        object-fit: cover;
+    }
+    
+    .services .ss {
+        margin-top: -10px;
+        height: 70vh;
+    }
+      
+    .services .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 auto;
+        height: 190vh;
+        position: absolute;
+        top: 180vh;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .services .videos video {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 100px;
+    }
+    
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+    
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+
+    .contacts {
+        background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 340px;
+        margin-left: 11%;
+    }
+
+    .icons .numbers {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .icons .numbers p {
+        font-size: 23px;
+        color: #fff;
+    }
+
+    .icons .socials {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 10%;
+        margin-top: 17px;
+    }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
+    
+        100%{
+            top: -36rem;
+        }
+    }
+}
