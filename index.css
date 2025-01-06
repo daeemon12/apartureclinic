@@ -13,7 +13,7 @@ html {
 :root {
     --primary-color: #fff;
     --secondary-color:black;
-    --tertiary-color: #22f730;
+    --tertiary-color: #0d7c14;
 }
 
 .container {
@@ -59,13 +59,15 @@ html {
     background-position: -3rem;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 
 .main img {
     width: 100%;
-    height: 50vh;
-    object-fit: fill;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    background-size: cover;
     object-position: center;
     position: absolute;
 }
@@ -87,23 +89,22 @@ nav {
 .main-1 {
     background-image: url(APATURE\ MESSAGE.gif);
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-position: center;
     background-size: cover;
 }
 
 .services .ff{
-    /* width: 100%;
-    background-color: rgb(22, 21, 21); */
-    /* background-image: url(images/drvin/SERVICES-N.jpg); */
-    background-size: contain;
+    background-image: url(SERVICES-N.jpg);
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
 
 .services .ss {
+    background-image: url(service\ ss.png);
     margin-top: -20px;
-    height: 330vh;
+    height: 380vh;
 }
 
 .services .videos {
@@ -112,7 +113,7 @@ nav {
     overflow-y: hidden;
     height: 390vh;
     position: absolute;
-    top: 120vh;
+    top: 100vh;
     left: 5%;
 }
 
@@ -147,58 +148,57 @@ nav {
 .main-2 {
     background-image: url(Testimonials.gif);
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-position: center;
-    background-size: contain;
-    margin-top: 5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-    .contacts {
-        background-image: url(new\ contact.jpg);
-        width: 100%;
-        height: 35vh;
-        background-position: center;
-        background-size: contain;
-        margin-top: 20px;
-    }
+.contacts {
+    background-image: url(new\ contact.jpg);
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    .icons {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+.icons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: shrink;
+}
 
-    .contacts .numbers {
-        width: 100%;
-        color: #fff;
-        display: flex;
-        justify-content: flex-start;
-        font-size: x-small;
-        font-family: "Poppins", serif;
-        margin: 120px 0 0 5px;
-    }
+.contacts .numbers {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 9px;
+    margin: 110px 0 0 5px;
+}
+.contacts .numbers a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 30px;
+}
 
-    .contacts .numbers a {
-        text-decoration: none;
-        color: #fff;
-        padding-right: 30px;
-    }
-    
-    .contacts .socials {
-        display: flex;
-        width: 100px;
-        justify-content: flex-start;
-        margin: 20px 0 0 0px;
-    }
-    
-    .contacts img {
-        width: 25px;
-        height: 25px;
-        padding: 5px;
-    }
+.contacts .socials {
+    display: flex;
+    width: 100px;
+    justify-content: flex-start;
+    margin: 10px 0 0 0px;
+}
+
+.contacts img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
 
 
 @keyframes drop-down {
@@ -257,17 +257,16 @@ nav {
     }
 
     .services .ff{
-        /* width: 100%;
-        background-color: rgb(22, 21, 21); */
-        /* background-image: url(images/drvin/SERVICES-N.jpg); */
-        background-size: contain;
+        background-image: url(SERVICES-N.jpg);
+        background-size: cover;
         width: 100%;
-        height: 140vh;
+        height: 50vh;
     }
     
     .services .ss {
+        background-image: url(service\ ss.png);
         margin-top: -20px;
-        height: 0;
+        height: 50vh;
     }
 
     .services .videos {
@@ -276,7 +275,7 @@ nav {
         overflow-y: hidden;
         height: 140vh;
         position: absolute;
-        top: 120vh;
+        top: 90vh;
         left: 5%;
     }
     
@@ -312,9 +311,10 @@ nav {
         background-image: url(Testimonials.gif);
         width: 100%;
         height: 40vh;
-        background-position: center;
+        background-position: bottom;
         background-size: contain;
-        margin-top: 5vh;
+        background-repeat: repeat;
+        
     }
     
     .contacts {
@@ -323,45 +323,50 @@ nav {
         height: 50vh;
         background-position: center;
         background-size: contain;
-        margin-top: 20px;
+        background-repeat: repeat;
     }
 
     .icons {
-        width: 80%;
-        margin: 0 auto;
+        max-width: 300px;
+        min-width: 270px;
         display: flex;
         flex-direction: column;
+        flex-shrink: shrink;
         justify-content: flex-start;
         align-items: flex-start;
+        position: absolute;
+        left: 4rem;
+        top: 90em;
+        right: 20rem;
+        flex-shrink: 1;
     }
 
     .contacts .numbers {
-        width: 100%;
+        max-width: 270px;
         color: #fff;
         display: flex;
         justify-content: flex-start;
-        font-size: small;
-        font-family: "Poppins", serif;
-        margin: 180px 0 0 0px;
+        font-size: 12px;
+        margin: 110px 0 0 0px;
+        
+        flex-shrink: 1;
     }
 
     .contacts .numbers a {
         text-decoration: none;
         color: #fff;
-        padding-right: 30px;
     }
     
     .contacts .socials {
         display: flex;
         width: 100px;
         justify-content: space-between;
-        margin: 20px 0 0 0px;
+        margin: 30px 0 0 0;
     }
     
     .contacts img {
         width: 30px;
         height: 30px;
-        padding: 5px;
     }
     
 }
@@ -386,12 +391,12 @@ nav {
         background-position: -3rem;
         background-size: cover;
         width: 100%;
-        height: 90vh;
+        height: 70vh;
     }
 
     .main img {
         width: 100%;
-        height: 90vh;
+        height: 70vh;
         object-fit: fill;
         object-position: center;
         position: absolute;
@@ -400,23 +405,22 @@ nav {
     .main-1 {
         background-image: url(APATURE\ MESSAGE.gif);
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         background-position: center;
         background-size: cover;
     }
 
     .services .ff{
-        /* width: 100%;
-        background-color: rgb(22, 21, 21); */
-        /* background-image: url(images/drvin/SERVICES-N.jpg); */
-        background-size: contain;
+        background-image: url(SERVICES-N.jpg);
+        background-size: cover;
         width: 100%;
-        height: 180vh;
+        height: 80vh;
     }
     
     .services .ss {
+        background-image: url(service\ ss.png);
         margin-top: -20px;
-        height: 0;
+        height: 90vh;
     }
 
     .services .videos {
@@ -425,7 +429,7 @@ nav {
         overflow-y: hidden;
         height: 140vh;
         position: absolute;
-        top: 200vh;
+        top: 140vh;
         left: 5%;
     }
 
@@ -460,9 +464,10 @@ nav {
     .main-2 {
         background-image: url(Testimonials.gif);
         width: 100%;
-        height: 60vh;
-        background-position: center;
+        height: 50vh;
+        background-position: bottom;
         background-size: contain;
+        background-repeat: repeat;
     }
     
     .contacts {
@@ -470,46 +475,52 @@ nav {
         width: 100%;
         height: 60vh;
         background-position: center;
-        background-size: contain;
-        margin-top: 20px;
+        background-size: cover;  
+        background-repeat: repeat;   
+        padding: 1.8rem;  
     }
 
     .icons {
-        width: 80%;
-        margin: 0 auto;
+        max-width: 350px;
+        min-width: 320px;
+        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        position: absolute;
+        flex-shrink: 1;
+        left: 5.5rem;
+        top: 130em;
+        right: 30rem;
     }
 
     .contacts .numbers {
-        width: 100%;
+        max-width: 330px;
         color: #fff;
         display: flex;
+        flex: 0 0 auto;
+        flex-shrink: none;
         justify-content: flex-start;
-        font-size: medium;
-        font-family: "Poppins", serif;
-        margin: 210px 0 0 30px;
+        font-size: 15px;
+        margin: 120px 0 0 0px;
     }
 
     .contacts .numbers a {
         text-decoration: none;
         color: #fff;
-        padding-right: 30px;
     }
     
     .contacts .socials {
         display: flex;
         width: 100px;
-        justify-content: flex-start;
-        margin: 70px 0 0 20px;
+        justify-content: space-between;
+        margin: 30px 0 0 0;
     }
     
     .contacts img {
-        width: 30px;
-        height: 30px;
-        padding: 5px;
+        width: 33px;
+        height: 33px;
     }
    
 }
@@ -528,29 +539,28 @@ nav {
         width: 100%;
         height: 100vh;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
     }
 
     .main img {
         width: 100%;
         height: 100vh;
-        object-fit: fill;
+        background-size: contain;
         object-position: center;
         position: absolute;
     }
 
     .services .ff{
-        /* width: 100%;
-        background-color: rgb(22, 21, 21); */
-        /* background-image: url(images/drvin/SERVICES-N.jpg); */
-        background-size: contain;
+        background-image: url(SERVICES-N.jpg);
+        background-size: cover;
         width: 100%;
-        height: 180vh;
+        height: 100vh;
     }
     
     .services .ss {
+        background-image: url(service\ ss.png);
         margin-top: -20px;
-        height: 0;
+        height: 100vh;
     }
 
     .services .videos {
@@ -559,7 +569,7 @@ nav {
         overflow-y: hidden;
         height: 170vh;
         position: absolute;
-        top: 210vh;
+        top: 190vh;
         left: 5%;
     }
 
@@ -595,50 +605,56 @@ nav {
         background-image: url(Testimonials.gif);
         width: 100%;
         height: 80vh;
-        background-position: center;
-        background-size: contain;
-        margin-top: 5vh;
+        padding: 0 2rem;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: repeat;
+        aspect-ratio: (16, 9);
     }
     
     .contacts {
         background-image: url(new\ contact.jpg);
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         background-position: center;
-        background-size: contain;
-        margin-top: 20px;
+        background-size: cover;
+        background-repeat: repeat;
+        padding: 1.8rem;
     }
 
     .icons {
-        width: 80%;
-        margin: 0 auto;
+        max-width: 450px;
+        min-width: 420px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        position: absolute;
+        left: 3rem;
+        top: 165em;
+        right: 32rem;
     }
 
     .contacts .numbers {
-        width: 100%;
+        max-width: 420px;
         color: #fff;
         display: flex;
+        flex-shrink: 1;
         justify-content: flex-start;
-        font-size: medium;
-        font-family: "Poppins", serif;
-        margin: 290px 0 0 20px;
+        font-size: 17px;   
+        margin: 100px 0 0 0px;
     }
 
     .contacts .numbers a {
         text-decoration: none;
         color: #fff;
-        padding-right: 150px;
     }
     
     .contacts .socials {
         display: flex;
         width: 100px;
         justify-content: space-between;
-        margin: 90px 0 0 10px;
+        margin: 30px 0 0 0;
     }
     
     .contacts img {
