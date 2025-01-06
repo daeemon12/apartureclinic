@@ -241,7 +241,7 @@ nav {
     }
 
     .main {
-        /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
+        /* background-image: url("APATURE\ WEB_1.gif"); */
         background-position: -3rem;
         background-size: cover;
         width: 100%;
@@ -335,9 +335,9 @@ nav {
         justify-content: flex-start;
         align-items: flex-start;
         position: absolute;
-        left: 4rem;
-        top: 90em;
-        right: 20rem;
+        left: 11%;
+        top: 260%;
+        right: 80%;
         flex-shrink: 1;
     }
 
@@ -387,7 +387,7 @@ nav {
     }
 
     .main {
-        /* background-image: url("images/drvin/APATURE\ WEB_1.gif"); */
+        /* background-image: url("APATURE\ WEB_1.gif"); */
         background-position: -3rem;
         background-size: cover;
         width: 100%;
@@ -482,17 +482,16 @@ nav {
 
     .icons {
         max-width: 350px;
-        min-width: 320px;
-        
+        min-width: 320px; 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         position: absolute;
         flex-shrink: 1;
-        left: 5.5rem;
-        top: 130em;
-        right: 30rem;
+        left: 11%;
+        top: 375%;
+        right: 89%;
     }
 
     .contacts .numbers {
@@ -640,9 +639,9 @@ nav {
         justify-content: flex-start;
         align-items: flex-start;
         position: absolute;
-        left: 3rem;
-        top: 167em;
-        right: 32rem;
+        left: 11%;
+        top: 480%;
+        right: 80%;
     }
 
     .contacts .numbers {
