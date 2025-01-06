@@ -189,11 +189,6 @@ nav {
 }
 
 @media (min-width: 375px) {
-    .nav-links ul li {
-        margin: 0.5rem;
-        border: 1px solid blue;
-        border-radius: 1rem;
-    }
   
     .nav-links a {
         text-decoration: none;
@@ -350,12 +345,6 @@ nav {
     }
 }
 @media (min-width: 640px) {
-    .nav-links ul li {
-        margin: 0.5rem;
-        border: 1px solid pink;
-        border-radius: 1rem;
-    }
-
     .nav-links a {
         text-decoration: none;
         font-size: 0.8rem;
@@ -413,12 +402,6 @@ nav {
     }
 }
 @media (min-width: 768px) {
-    .nav-links ul li {
-        margin: 0.5rem;
-        border: 1px solid brown;
-        border-radius: 1rem;
-    }
-
     .nav-links a {
         text-decoration: none;
         font-size: 1rem;
@@ -543,12 +526,6 @@ nav {
     }
 }
 @media (min-width: 1024px) {
-    .nav-links ul li {
-        margin: 0.5rem;
-        border: 1px solid yellow;
-        border-radius: 1rem;
-    }
-
     .nav-links a {
         text-decoration: none;
         font-size: 1rem;
@@ -681,12 +658,6 @@ nav {
     }
 }
 @media (min-width: 1280px) {
-    .nav-links ul li {
-        margin: 0.5rem;
-        border: 1px solid aqua;
-        border-radius: 1rem;
-    }
-
     .nav-links a {
         text-decoration: none;
         font-size: 1.4rem;
@@ -817,12 +788,6 @@ nav {
     }
 }
 @media (min-width: 1536px) {
-    .nav-links ul li {
-        margin: 0.5rem;
-        border: 1px solid gray;
-        border-radius: 1rem;
-    }
-
     .nav-links a {
         text-decoration: none;
         font-size: 1.4rem;
