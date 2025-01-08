@@ -30,7 +30,7 @@ html {
     text-decoration: none;
     font-size: 0.3rem;
     color: var(--primary-color);
-    margin: 0.3rem;
+    margin: 0 3px;
     text-align: center;
 }
 
@@ -48,7 +48,7 @@ nav {
     align-items: center;
     padding: 0.05rem;
     position: relative;
-    top: -11rem;
+    top: -8rem;
     animation: drop-down 1s ease forwards;
 }
 
@@ -71,8 +71,8 @@ nav {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 40vh;
-    margin-top: -100px;
+    height: 15vh;
+    margin-top: -82px;
 }
 
 .services .ff {
@@ -81,7 +81,7 @@ nav {
 
 .services .ss {
     margin-top: -10px;
-    height: 320vh;
+    height: 210vh;
 }
 
 .services .videos {
@@ -91,9 +91,9 @@ nav {
     align-items: flex-start;
     gap: 0;
     margin: 0 auto;
-    height: 380vh;
+    height: 270vh;
     position: absolute;
-    top: 80vh;
+    top: 20vh;
 }
 
 .services .videos video {
@@ -139,7 +139,7 @@ nav {
     background-position: left;
     background-repeat: no-repeat;
     width: 100%;
-    height: 40vh;
+    height: auto;
     object-fit: cover;
 }
 
@@ -150,8 +150,8 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 150px;
-    margin-left: 15%;
+    margin-top: 100px;
+    margin-left: 13%;
 }
 
 .icons .numbers {
@@ -161,7 +161,7 @@ nav {
 }
 
 .icons .numbers p {
-    font-size: 12px;
+    font-size: 8px;
     color: #fff;
 }
 
@@ -184,7 +184,7 @@ nav {
     }
 
     100%{
-        top: -10rem;
+        top: -8rem;
     }
 }
 
@@ -193,7 +193,7 @@ nav {
     .nav-links a {
         text-decoration: none;
         font-size: 0.6rem;
-        color: red;
+        color: var(--primary-color);
         margin: 0.3rem;
         text-align: center;
     }
@@ -204,7 +204,7 @@ nav {
         align-items: center;
         padding: 0.05rem;
         position: relative;
-        top: -13rem;
+        top: -9rem;
         animation: drop-down 1s ease forwards;
     }
     
@@ -227,8 +227,8 @@ nav {
         background-position: center;
         background-size: cover;
         width: 100%;
-        height: 40vh;
-        margin-top: -100px;
+        height: 17vh;
+        margin-top: -80px;
     }
     
     .services .ff {
@@ -237,7 +237,7 @@ nav {
     
     .services .ss {
         margin-top: -10px;
-        height: 320vh;
+        height: 220vh;
     }
     
     .services .videos {
@@ -247,9 +247,9 @@ nav {
         align-items: flex-start;
         gap: 0;
         margin: 0 auto;
-        height: 380vh;
+        height: 270vh;
         position: absolute;
-        top: 90vh;
+        top: 40vh;
     }
     
     .services .videos video {
@@ -295,7 +295,7 @@ nav {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 40vh;
+        height: 20vh;
         object-fit: cover;
     }
     
@@ -306,8 +306,8 @@ nav {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 150px;
-        margin-left: 15%;
+        margin-top: 110px;
+        margin-left: 11%;
     }
     
     .icons .numbers {
@@ -317,7 +317,7 @@ nav {
     }
     
     .icons .numbers p {
-        font-size: 12px;
+        font-size: 8px;
         color: #fff;
     }
     
@@ -331,7 +331,7 @@ nav {
         justify-content: flex-start;
         gap: 5px;
         width: 12%;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     @keyframes drop-down {
@@ -340,15 +340,16 @@ nav {
         }
     
         100%{
-            top: -10rem;
+            top: -9rem;
         }
     }
 }
+
 @media (min-width: 640px) {
     .nav-links a {
         text-decoration: none;
         font-size: 0.8rem;
-        color: blue;
+        color: var(--primary-color);
         margin: 0.3rem;
         text-align: center;
     }
@@ -405,7 +406,137 @@ nav {
     .nav-links a {
         text-decoration: none;
         font-size: 1rem;
-        color: yellow;
+        color: var(--primary-color);
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        margin: 0.5rem;
+        border: 1px solid var(--tertiary-color);
+        border-radius: 1rem;
+    }
+    
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -17rem;
+        animation: drop-down 1s ease forwards;
+    }
+
+    .container .story {
+        background-image: url(APATURE\ MESSAGE.gif);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .services .ff {
+        object-fit: cover;
+    }
+    
+    .services .ss {
+        margin-top: -10px;
+        height: 50vh;
+    }
+      
+    .services .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 auto;
+        height: 130vh;
+        position: absolute;
+        top: 70vh;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .services .videos video {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 100px;
+    }
+    
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+    
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+
+    .contacts {
+        background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+    }
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 230px;
+        margin-left: 12.5%;
+    }
+
+    .icons .numbers p {
+        font-size: 11px;
+        color: #fff;
+    }
+
+    .icons .socials {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
+    
+        100%{
+            top: -17rem;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--primary-color);
         margin: 0.5rem;
         text-align: center;
     }
@@ -416,7 +547,7 @@ nav {
         align-items: center;
         padding: 0.05rem;
         position: relative;
-        top: -19rem;
+        top: -22rem;
         animation: drop-down 1s ease forwards;
     }
 
@@ -426,6 +557,7 @@ nav {
         background-size: cover;
         width: 100%;
         height: 40vh;
+        margin-top: -100px;
     }
 
     .services .ff {
@@ -434,7 +566,7 @@ nav {
     
     .services .ss {
         margin-top: -10px;
-        height: 70vh;
+        height: 30vh;
     }
       
     .services .videos {
@@ -444,9 +576,141 @@ nav {
         align-items: flex-start;
         gap: 0;
         margin: 0 auto;
-        height: 200vh;
+        height: 80vh;
         position: absolute;
-        top: 120vh;
+        top: 80vh;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .services .videos video {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .services .videos .first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 50px auto;
+    }
+    
+    .services .second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 1rem;
+        margin: 0 auto 50px auto;
+    }
+    
+    .services .third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    .contacts {
+        background-image: url(new\ contact.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+    }
+    
+    .contacts .icons {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 250px;
+        margin-left: 12%;
+    }
+
+    .icons .numbers {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .icons .numbers p {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .icons .socials {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    @keyframes drop-down {
+        0% {
+            top: -21rem;
+        }
+    
+        100%{
+            top: -22rem;
+        }
+    }
+}
+@media (min-width: 1280px) {
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin: 0.9rem;
+        text-align: center;
+    }
+ 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.05rem;
+        position: relative;
+        top: -28rem;
+        animation: drop-down 1s ease forwards;
+    }
+
+    .container .story {
+        background-image: url(APATURE\ MESSAGE.gif);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        margin-top: -100px;
+    }
+
+    .services .ff {
+        object-fit: cover;
+    }
+    
+    .services .ss {
+        margin-top: -10px;
+        height: 50vh;
+    }
+      
+    .services .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+        margin: 0 auto;
+        height: 160vh;
+        position: absolute;
+        top: 140vh;
         left: 1rem;
         right: 1rem;
     }
@@ -497,262 +761,6 @@ nav {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 220px;
-        margin-left: 11%;
-    }
-
-    .icons .numbers p {
-        font-size: 15px;
-        color: #fff;
-    }
-
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 5px;
-        width: 10%;
-        margin-top: 10px;
-    }
-
-    @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -19rem;
-        }
-    }
-}
-@media (min-width: 1024px) {
-    .nav-links a {
-        text-decoration: none;
-        font-size: 1rem;
-        color: purple;
-        margin: 0.5rem;
-        text-align: center;
-    }
- 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.05rem;
-        position: relative;
-        top: -24rem;
-        animation: drop-down 1s ease forwards;
-    }
-
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
-        margin-top: -100px;
-    }
-
-    .services .ff {
-        object-fit: cover;
-    }
-    
-    .services .ss {
-        margin-top: -10px;
-        height: 70vh;
-    }
-      
-    .services .videos {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 0;
-        margin: 0 auto;
-        height: 170vh;
-        position: absolute;
-        top: 190vh;
-        left: 1rem;
-        right: 1rem;
-    }
-
-    .services .videos video {
-        width: 100%;
-        height: 200px;
-        margin: 0 auto;
-    }
-
-    .services .videos .first {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        margin: 50px auto;
-    }
-    
-    .services .second {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 30px;
-        gap: 1rem;
-        margin: 0 auto 50px auto;
-    }
-    
-    .services .third {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        gap: 1rem;
-        margin: 0 auto;
-    }
-
-    .contacts {
-        background-image: url(new\ contact.jpg);
-        background-position: left;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-    }
-    
-    .contacts .icons {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 270px;
-        margin-left: 11%;
-    }
-
-    .icons .numbers {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .icons .numbers p {
-        font-size: 18px;
-        color: #fff;
-    }
-
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 5px;
-        width: 10%;
-        margin-top: 10px;
-    }
-
-    @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -24rem;
-        }
-    }
-}
-@media (min-width: 1280px) {
-    .nav-links a {
-        text-decoration: none;
-        font-size: 1.4rem;
-        color: pink;
-        margin: 0.9rem;
-        text-align: center;
-    }
- 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.05rem;
-        position: relative;
-        top: -30rem;
-        animation: drop-down 1s ease forwards;
-    }
-
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 80vh;
-        margin-top: -100px;
-    }
-
-    .services .ff {
-        object-fit: cover;
-    }
-    
-    .services .ss {
-        margin-top: -10px;
-        height: 70vh;
-    }
-      
-    .services .videos {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 0;
-        margin: 0 auto;
-        height: 160vh;
-        position: absolute;
-        top: 200vh;
-        left: 1rem;
-        right: 1rem;
-    }
-
-    .services .videos video {
-        width: 100%;
-        height: 200px;
-        margin: 0 auto;
-    }
-
-    .services .videos .first {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: 100px;
-    }
-    
-    .services .second {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 30px;
-        gap: 1rem;
-    }
-    
-    .services .third {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        gap: 1rem;
-    }
-
-    .contacts {
-        background-image: url(new\ contact.jpg);
-        background-position: left;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 80vh;
-        object-fit: cover;
-    }
-    
-    .contacts .icons {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
         margin-top: 330px;
         margin-left: 11%;
     }
@@ -773,7 +781,7 @@ nav {
         justify-content: flex-start;
         gap: 5px;
         width: 11%;
-        margin-top: 14px;
+        margin-top: 18px;
     }
 
     @keyframes drop-down {
@@ -782,16 +790,16 @@ nav {
         }
     
         100%{
-            top: -30rem;
+            top: -28rem;
         }
     }
 }
 @media (min-width: 1536px) {
     .nav-links a {
         text-decoration: none;
-        font-size: 1.4rem;
-        color: white;
-        margin: 0.9rem;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin: 1rem;
         text-align: center;
     }
  
@@ -810,7 +818,7 @@ nav {
         background-position: center;
         background-size: cover;
         width: 100%;
-        height: 80vh;
+        height: 60vh;
         margin-top: -100px;
     }
 
@@ -820,7 +828,7 @@ nav {
     
     .services .ss {
         margin-top: -10px;
-        height: 70vh;
+        height: 50vh;
     }
       
     .services .videos {
@@ -832,14 +840,14 @@ nav {
         margin: 0 auto;
         height: 190vh;
         position: absolute;
-        top: 180vh;
+        top: 160vh;
         left: 1rem;
         right: 1rem;
     }
 
     .services .videos video {
         width: 100%;
-        height: 200px;
+        height: 550px;
         margin: 0 auto;
     }
 
@@ -872,7 +880,7 @@ nav {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 90vh;
+        height: 60vh;
         object-fit: cover;
     }
     
@@ -883,7 +891,7 @@ nav {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 360px;
+        margin-top: 750px;
         margin-left: 11%;
     }
 
@@ -894,7 +902,7 @@ nav {
     }
 
     .icons .numbers p {
-        font-size: 23px;
+        font-size: 45px;
         color: #fff;
     }
 
@@ -903,7 +911,7 @@ nav {
         justify-content: flex-start;
         gap: 5px;
         width: 10%;
-        margin-top: 17px;
+        margin-top: 25px;
     }
 
     @keyframes drop-down {
@@ -912,7 +920,7 @@ nav {
         }
     
         100%{
-            top: -36rem;
+            top: -35rem;
         }
     }
 }
