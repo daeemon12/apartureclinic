@@ -128,7 +128,7 @@ nav {
 
 .testimony img{
     width: 100%;
-    height: auto;
+    height: 20vh;
     object-fit: cover;
     margin: 0 auto;
 }
