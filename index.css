@@ -81,7 +81,7 @@ nav {
 
 .services .ss {
     margin-top: -10px;
-    height: 210vh;
+    height: 230vh;
 }
 
 .services .videos {
@@ -93,7 +93,7 @@ nav {
     margin: 0 auto;
     height: 290vh;
     position: absolute;
-    top: 60vh;
+    top: 40vh;
 }
 
 .services .videos video {
@@ -237,7 +237,7 @@ nav {
     
     .services .ss {
         margin-top: -10px;
-        height: 220vh;
+        height: 230vh;
     }
     
     .services .videos {
@@ -249,7 +249,7 @@ nav {
         margin: 0 auto;
         height: 290vh;
         position: absolute;
-        top: 60vh;
+        top: 40vh;
     }
     
     .services .videos video {
@@ -394,7 +394,7 @@ nav {
 
     .testimony img{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     object-fit: cover;
     margin: 0 auto;
     }
@@ -496,10 +496,10 @@ nav {
     }
 
     .testimony img{
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    margin: 0 auto;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        margin: 0 auto;
     }
 
     .contacts {
@@ -630,10 +630,10 @@ nav {
     }
 
     .testimony img{
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-    margin: 0 auto;
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        margin: 0 auto;
 }
 
     .contacts {
@@ -766,6 +766,13 @@ nav {
         gap: 1rem;
     }
 
+    .testimony img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
     .contacts {
         background-image: url(new\ contact.jpg);
         background-position: left;
@@ -894,6 +901,13 @@ nav {
         flex-direction: row;
         margin-top: 30px;
         gap: 1rem;
+    }
+
+    .testimony img{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        margin: 0 auto;
     }
 
     .contacts {
