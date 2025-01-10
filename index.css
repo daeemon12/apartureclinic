@@ -156,16 +156,16 @@ nav {
 
 .contacts {
     background-image: url(new\ contact.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     width: 100%;
     object-fit: cover;
-    min-height: 40vh;
+    min-height: 20vh;
 }
 
 .contacts .icons {
-    width: 78%;
+    width: 69%;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -227,16 +227,16 @@ nav {
         background-repeat: no-repeat;
         width: 100%;
         object-fit: cover;
-        min-height: 25vh;
+        min-height: 20vh;
     }
     
     .contacts .icons {
-        width: 67%;
+        width: 70%;
         margin: 0 auto;
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 10px;
-        margin-top: 140px;
+        margin-top: 120px;
         margin-bottom: 50px;
         /* border: 1px solid red; */
     }
