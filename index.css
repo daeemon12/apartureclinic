@@ -143,7 +143,7 @@ nav {
 }
 
 .services .videos video {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -468,14 +468,14 @@ nav {
     .services .videos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 1.5rem 1rem;
         margin: 0 auto;
         margin-bottom: 10vh;
         overflow-y: hidden;
     }
     
     .services .videos video {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -629,13 +629,13 @@ nav {
     .services .videos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
+        gap: 1.5rem 1rem;
         margin: 0 auto;
         margin-bottom: 10vh;
     }
     
     .services .videos video {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
