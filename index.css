@@ -110,10 +110,10 @@ nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem 0.1rem;
-    margin-inline: auto;
-    width: 100%;
     text-align: center;
+    gap: 0.8rem 0.1rem;
+    margin-inline: auto;
+    width: 80%;
     margin-top: 30px;
 }
 
@@ -157,35 +157,58 @@ nav {
 }
 
 .contacts {
-    background-image: url(new\ contact.jpg);
+    background-image: url(BACKGROUND.png);
     background-size: cover;
-    background-position: left;
     background-repeat: no-repeat;
     width: 100%;
     object-fit: cover;
-    min-height: 20vh;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
 }
 
 .contacts .icons {
-    width: 69%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
     gap: 10px;
-    margin-top: 120px;
-    margin-bottom: 50px;
-    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .logo-img {
+    width: 30%;
+    height: auto;
+}
+.numbers .touch-img {
+    width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.camera .camera-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .icons .numbers {
     display: flex;
-    justify-content: flex-start;
-    gap: 10px;
+    flex-direction: column;
 }
 
 .icons .numbers p {
-    font-size: 8px;
+    font-size: 5px;
     color: #fff;
+    margin-bottom: 5px;
+}
+
+.numbers span {
+    margin-left: 5px;
 }
 
 .icons .numbers a {
@@ -196,8 +219,8 @@ nav {
 .icons .socials {
     display: flex;
     justify-content: flex-start;
-    gap: 5px;
-    width: 12%; 
+    gap: 3px;
+    width: 10%; 
 }
 
 @keyframes drop-down {
@@ -222,33 +245,6 @@ nav {
         animation: drop-down 1s ease forwards;
     }
 
-    .contacts {
-        background-image: url(new\ contact.jpg);
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
-        width: 100%;
-        object-fit: cover;
-        min-height: 20vh;
-    }
-    
-    .contacts .icons {
-        width: 71%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        margin-top: 120px;
-        margin-bottom: 50px;
-        /* border: 1px solid red; */
-    }
-    
-    .icons .numbers {
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-    }
-    
     .icons .numbers p {
         font-size: 8px;
         color: #fff;
@@ -329,33 +325,6 @@ nav {
         width: 27px;
         height: 14px;
         border-radius: 5px; 
-    }
-
-    .contacts {
-        background-image: url(new\ contact.jpg);
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
-        width: 100%;
-        object-fit: cover;
-        min-height: 20vh;
-    }
-    
-    .contacts .icons {
-        width: 78%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        margin-top: 180px;
-        margin-bottom: 50px;
-        /* border: 1px solid red; */
-    }
-    
-    .icons .numbers {
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
     }
     
     .icons .numbers p {
@@ -457,7 +426,7 @@ nav {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0.5rem 0.1rem;
         margin-inline: auto;
-        width: 100%;
+        width: 80%;
         text-align: center;
         margin-top: 30px;
     }
@@ -491,37 +460,61 @@ nav {
         width: 100%;
         margin: 0 auto;
     }
-
+    
     .contacts {
-        background-image: url(new\ contact.jpg);
+        background-image: url(BACKGROUND.png);
         background-size: cover;
-        background-position: left;
         background-repeat: no-repeat;
         width: 100%;
         object-fit: cover;
-        min-height: 30vh;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4em;
     }
     
     .contacts .icons {
-        width: 75%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
         gap: 10px;
-        margin-top: 220px;
-        margin-bottom: 50px;
-        /* border: 1px solid red; */
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .top .logo-img {
+        width: 30%;
+        height: auto;
+    }
+    .numbers .touch-img {
+        width: 65%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+    .camera .camera-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     
     .icons .numbers {
         display: flex;
-        justify-content: flex-start;
-        gap: 10px;
+        flex-direction: column;
     }
     
     .icons .numbers p {
-        font-size: 10px;
+        font-size: 12px;
         color: #fff;
+        margin-bottom: 10px;
+       
+    }
+    
+    .numbers span {
+        margin-left: 5px;
     }
     
     .icons .numbers a {
@@ -532,7 +525,7 @@ nav {
     .icons .socials {
         display: flex;
         justify-content: flex-start;
-        gap: 5px;
+        gap: 3px;
         width: 12%; 
     }
 
@@ -617,7 +610,7 @@ nav {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0.5rem 0.1rem;
         margin-inline: auto;
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin-top: 30px;
     }
@@ -651,37 +644,60 @@ nav {
         width: 100%;
         margin: 0 auto;
     }
-
+    
     .contacts {
-        background-image: url(new\ contact.jpg);
+        background-image: url(BACKGROUND.png);
         background-size: cover;
-        background-position: left;
         background-repeat: no-repeat;
         width: 100%;
         object-fit: cover;
-        min-height: 30vh;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4em;
     }
     
     .contacts .icons {
-        width: 76%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
         gap: 10px;
-        margin-top: 250px;
-        margin-bottom: 50px;
-        /* border: 1px solid red; */
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .top .logo-img {
+        width: 30%;
+        height: auto;
+    }
+    .numbers .touch-img {
+        width: 65%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+    .camera .camera-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     
     .icons .numbers {
         display: flex;
-        justify-content: flex-start;
-        gap: 10px;
+        flex-direction: column;
     }
     
     .icons .numbers p {
-        font-size: 10px;
+        font-size: 15px;
         color: #fff;
+        margin-bottom: 10px;
+    }
+    
+    .numbers span {
+        margin-left: 35px;
     }
     
     .icons .numbers a {
@@ -692,8 +708,8 @@ nav {
     .icons .socials {
         display: flex;
         justify-content: flex-start;
-        gap: 5px;
-        width: 10%; 
+        gap: 15px;
+        width: 14%; 
     }
 
     @keyframes drop-down {
@@ -765,35 +781,58 @@ nav {
     }
     
     .contacts {
-        background-image: url(new\ contact.jpg);
+        background-image: url(BACKGROUND.png);
         background-size: cover;
-        background-position: left;
         background-repeat: no-repeat;
         width: 100%;
         object-fit: cover;
-        min-height: 40vh;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4em;
     }
     
     .contacts .icons {
-        width: 78%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
         gap: 10px;
-        margin-top: 230px;
-        margin-bottom: 50px;
-        /* border: 1px solid red; */
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .top .logo-img {
+        width: 30%;
+        height: auto;
+    }
+    .numbers .touch-img {
+        width: 65%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .camera .camera-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
     
     .icons .numbers {
         display: flex;
-        justify-content: flex-start;
-        gap: 10px;
+        flex-direction: column;
     }
     
     .icons .numbers p {
-        font-size: 12px;
+        font-size: 16px;
         color: #fff;
+        margin-bottom: 14px;
+    }
+    
+    .numbers span {
+        margin-left: 40px;
     }
     
     .icons .numbers a {
@@ -804,8 +843,8 @@ nav {
     .icons .socials {
         display: flex;
         justify-content: flex-start;
-        gap: 5px;
-        width: 8%; 
+        gap: 20px;
+        width: 15%; 
     }
 
     @keyframes drop-down {
@@ -876,32 +915,6 @@ nav {
         color: #fff;
     }
     
-    .contacts {
-        background-image: url(new\ contact.jpg);
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
-        width: 100%;
-        object-fit: cover;
-        min-height: 40vh;
-    }
-    
-    .contacts .icons {
-        width: 78%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        margin-top: 260px;
-        margin-bottom: 50px;
-        /* border: 1px solid red; */
-    }
-    
-    .icons .numbers {
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-    }
     
     .icons .numbers p {
         font-size: 14px;
