@@ -47,7 +47,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.05rem;
+    margin-right: 1em;
     position: relative;
     top: -10rem;
     animation: drop-down 1s ease forwards;
@@ -110,6 +110,8 @@ nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 0.8rem 0.1rem;
     margin-inline: auto;
@@ -122,8 +124,10 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-size: 6px;
+    font-size: 7px;
     color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .works .index {
@@ -240,6 +244,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 0.05rem;
+        margin-right: 1em;
         position: relative;
         top: -10rem;
         animation: drop-down 1s ease forwards;
@@ -363,6 +368,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 0.05rem;
+        margin-right: 1.2em;
         position: relative;
         top: -16rem;
         animation: drop-down 1s ease forwards;
