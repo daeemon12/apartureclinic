@@ -6,6 +6,8 @@ var video5 = document.getElementById("video-5");
 var video6 = document.getElementById("video-6");
 var video7 = document.getElementById("video-7");
 var video8 = document.getElementById("video-8");
+var video9 = document.getElementById("video-9");
+var video10 = document.getElementById("video-10");
 
 video1.addEventListener("mouseover", function(){
     video1.setAttribute("controls", "controls")
@@ -54,4 +56,16 @@ video8.addEventListener("mouseover", function(){
 })
 video8.addEventListener("mouseout", function(){
     video8.removeAttribute("controls")
+})
+video9.addEventListener("mouseover", function(){
+    video9.setAttribute("controls", "controls")
+})
+video9.addEventListener("mouseout", function(){
+    video9.removeAttribute("controls")
+})
+video10.addEventListener("mouseover", function(){
+    video10.setAttribute("controls", "controls")
+})
+video10.addEventListener("mouseout", function(){
+    video10.removeAttribute("controls")
 })
