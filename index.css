@@ -16,108 +16,90 @@ html {
     --tertiary-color: #0d7c14;
 }
 
-.container {
+header {
     width: 100%;
 }
 
-.nav-links ul li {
-    padding: 0.1rem;
-    border: 1px solid var(--tertiary-color);
-    border-radius: 0.7rem;
-    margin-bottom: 0.2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 0.5rem;
-    color: var(--primary-color);
-    margin: 0 3px;
-    text-align: center;
-}
-
-#active {
-    color: var(--primary-color);
-}
-
-.nav-links a:hover {
-    color: #22f730;
+.main img{
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    position: relative;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1em;
-    position: relative;
-    top: -10rem;
     animation: drop-down 1s ease forwards;
+    position: absolute;
+    top: 3em;
+    right: 3em;
 }
 
-.logo h1 {
+.nav-links ul li {
+    padding: 0.5em;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 1em;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1em;
     color: var(--primary-color);
+    margin: 0 3px;
+    text-align: center;
+}
+
+#active {
+    color: #22f730;
+}
+
+.nav-links a:hover {
+    color: #22f730;
 }
 
 .animation {
     animation: fade-in 0.2s linear forwards;
 }
 
-.main img {
+.story {
     width: 100%;
-    display: block;
+    height: 50vh;
+    background-image: url(APATURE\ MESSAGE.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.services {
+    background-image: url(SERVICES-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 1em;
+}
+
+.services img{
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.container .story {
-    background-image: url(APATURE\ MESSAGE.gif);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    min-height: 15vh;
-    margin-top: -82px;
-    
-}
-
-.services .display{
-    display: grid;
-    grid-template-rows: 10% 90%;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    background-image: url(SERVICES-background.jpg);
-    background-size: contain;
-    background-position: center;
-    padding: 0 1em;
-    overflow-y: hidden;
-}
-
-.display .title {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.title .frame {
-    width: 100px;
-    text-align: center;
-}
-
-.display .text {
-    overflow-y: hidden;
-}
-
 .services .videos {
+    position: relative;
+    top: -40vh;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
     margin: 0 auto;
     overflow-y: hidden;
-    margin-bottom: 10vh;
 }
 
 .services .videos video {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -128,13 +110,17 @@ nav {
     margin: 0 auto;
 }
 
+footer {
+    position: relative;
+}
+
 .contacts {
     background-image: url(BACKGROUND.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     object-fit: cover;
-    min-height: auto;
+    height: auto;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     justify-content: space-between;
@@ -158,7 +144,7 @@ nav {
     height: auto;
 }
 .numbers .touch-img {
-    width: 75%;
+    width: 55%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -174,7 +160,7 @@ nav {
 }
 
 .icons .numbers p {
-    font-size: 5px;
+    font-size: 100%;
     color: #fff;
     margin-bottom: 5px;
 }
@@ -191,606 +177,82 @@ nav {
 .icons .socials {
     display: flex;
     justify-content: flex-start;
-    gap: 3px;
-    width: 10%; 
+    gap: 10px;
+    width: 100%; 
+}
+
+.icons .socials img {
+    width: 1em;
 }
 
 @keyframes drop-down {
     0% {
-        top: -21rem;
+        top: -21em;
     }
 
     100%{
-        top: -8rem;
+        top: 3em;
     }
 }
 
-@media (min-width: 375px) {
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.05rem;
-        margin-right: 1em;
-        position: relative;
-        top: -10rem;
-        animation: drop-down 1s ease forwards;
-    }
-
-    .icons .numbers p {
-        font-size: 8px;
-        color: #fff;
-    }
-    
-    .icons .numbers a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 5px;
-        width: 12%; 
-    }
-
-    .display .title {
-        width: 100%;
-        overflow-y: hidden;
-    }
-  
-
-    /* @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -9rem;
-        }
-    } */
-}
-@media (min-width: 640px) {
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.05rem;
-        position: relative;
-        top: -10rem;
-        animation: drop-down 1s ease forwards;
-    }
-
+@media (max-width: 640px) {
     .nav-links ul li {
-        padding: 0.1rem;
-        border: 1px solid var(--tertiary-color);
-        border-radius: 0.7rem;
+        padding: 0.2em;
+        border-radius: 0.8em;
         margin-bottom: 0.2rem;
     }
     
     .nav-links a {
-        text-decoration: none;
-        font-size: 0.7rem;
-        color: var(--primary-color);
-        margin: 0 3px;
-        text-align: center;
+        font-size: 0.7em;
     }
-
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
+    
+    .story {
         width: 100%;
-        min-height: 20vh;
-        margin-top: -82px; 
+        height: 25vh;
     }
 
-    .icons .numbers p {
-        font-size: 10px;
-        color: #fff;
-    }
-    
-    .icons .numbers a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 5px;
-        width: 12%; 
-    }
-
-    @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -13rem;
-        }
-    }
-}
-
-
-@media (min-width: 768px) {
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.05rem;
-        margin-right: 1.2em;
-        position: relative;
-        top: -16rem;
-        animation: drop-down 1s ease forwards;
-    }
-
-    .nav-links ul li {
-        padding: 0.1rem;
-        border: 1px solid var(--tertiary-color);
-        border-radius: 0.7rem;
-        margin-bottom: 0.2rem;
-    }
-    
-    .nav-links a {
-        text-decoration: none;
-        font-size: 0.7rem;
-        color: var(--primary-color);
-        margin: 0 3px;
-        text-align: center;
-    }
-
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        min-height: 25vh;
-        margin-top: -82px; 
-    }
-
-    .services .display{
-        display: grid;
-        grid-template-rows: 30% 70%;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        gap: 0;
-        height: auto;
-        background-image: url(SERVICES-background.jpg);
-        background-size: contain;
-        background-position: center;
-        padding: 0 1em;
-        overflow-y: hidden;
-    }
-
-    .display .title {
-        width: 100%;
-        overflow-y: hidden;
-    }
-
-    .title .frame {
-        width: 130px;
-        text-align: center;
-    }
-    
     .services .videos {
+        top: -10vh;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem 1rem;
-        margin: 0 auto;
-        overflow-y: hidden;
-        margin-bottom: 10vh;
-        margin-top: -10vh;
+        grid-template-columns: 1fr;
     }
-
     
     .services .videos video {
         width: 100%;
-        margin: 0 auto;
-    }
-    
-    .contacts {
-        background-image: url(BACKGROUND.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        object-fit: cover;
-        min-height: auto;
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 4em;
-    }
-    
-    .contacts .icons {
-        width: 100%;
         height: 100%;
         margin: 0 auto;
-        gap: 10px;
-        display: grid;
-        grid-template-rows: 1fr 2fr;
-        justify-content: space-between;
-        align-items: center;
     }
-    
-    .top .logo-img {
-        width: 30%;
-        height: auto;
-    }
+
     .numbers .touch-img {
         width: 65%;
-        height: auto;
-        margin-bottom: 12px;
-    }
-    .camera .camera-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .icons .numbers {
-        display: flex;
-        flex-direction: column;
     }
     
     .icons .numbers p {
-        font-size: 12px;
+        font-size: 60%;
         color: #fff;
-        margin-bottom: 10px;
-       
-    }
-    
-    .numbers span {
-        margin-left: 5px;
-    }
-    
-    .icons .numbers a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 3px;
-        width: 12%; 
+        margin-bottom: 5px;
     }
 
     @keyframes drop-down {
         0% {
-            top: -21rem;
+            top: -21em;
         }
     
         100%{
-            top: -17rem;
+            top: 1em;
         }
     }
 }
-@media (min-width: 1024px) {
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.05rem;
-        position: relative;
-        top: -24rem;
-        animation: drop-down 1s ease forwards;
-    }
-
-    .nav-links ul li {
-        padding: 0.1rem;
-        border: 1px solid var(--tertiary-color);
-        border-radius: 0.7rem;
-        margin-bottom: 0.2rem;
-    }
-    
-    .nav-links a {
-        text-decoration: none;
-        font-size: 0.9rem;
-        color: var(--primary-color);
-        margin: 0 3px;
-        text-align: center;
-    }
-    
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        min-height: 35vh;
-        margin-top: -82px;
-        
-    }
-
-    .services .display{
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 1fr;
-        background-image: url(SERVICES-background.jpg);
-        background-size: contain;
-        background-position: center;
-        padding: 0 1em;
-        overflow-y: hidden;
-    }
-
-    .title .frame {
-        width: 150px;
-        text-align: center;
-    }
-    
+@media (max-width: 768px) {
     .services .videos {
+        top: -5vh;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.5rem 1rem;
-        height: auto;
-        margin: 0 auto;
-        align-self: center;
-        margin-bottom: 10vh;
-        margin-top: -15vh;
-    }
-    
-    
-    .contacts {
-        background-image: url(BACKGROUND.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        object-fit: cover;
-        min-height: auto;
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 4em;
-    }
-    
-    .contacts .icons {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        gap: 10px;
-        display: grid;
-        grid-template-rows: 1fr 2fr;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .top .logo-img {
-        width: 30%;
-        height: auto;
-    }
-    .numbers .touch-img {
-        width: 65%;
-        height: auto;
-        margin-bottom: 12px;
-    }
-    .camera .camera-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .icons .numbers {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .icons .numbers p {
-        font-size: 15px;
-        color: #fff;
-        margin-bottom: 10px;
-    }
-    
-    .numbers span {
-        margin-left: 35px;
-    }
-    
-    .icons .numbers a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 15px;
-        width: 14%; 
-    }
-
-    @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -22rem;
-        }
-    }
-}
-@media (min-width: 1280px) {
-
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        min-height: 45vh;
-        margin-top: -82px;
-        
-    }
-
-    .services .display{
-        display: grid;
-        grid-template-rows: 50% 50%;
         grid-template-columns: 1fr;
-        background-image: url(SERVICES-background.jpg);
-        background-size: contain;
-        background-position: center;
-        padding: 0 1em;
-        overflow-y: hidden;
     }
+    
+} 
 
-    .title .frame {
-        width: 150px;
-        text-align: center;
-    }
-    
-    .services .videos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.5rem 1rem;
-        height: auto;
-        margin: 0 auto;
-        align-self: center;
-        margin-bottom: 10vh;
-        margin-top: -25vh;
-    }
-    
-    .contacts {
-        background-image: url(BACKGROUND.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        object-fit: cover;
-        min-height: auto;
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 4em;
-    }
-    
-    .contacts .icons {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        gap: 10px;
-        display: grid;
-        grid-template-rows: 1fr 2fr;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .top .logo-img {
-        width: 30%;
-        height: auto;
-    }
-    .numbers .touch-img {
-        width: 65%;
-        height: auto;
-        margin-bottom: 15px;
-    }
-    .camera .camera-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    
-    .icons .numbers {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .icons .numbers p {
-        font-size: 16px;
-        color: #fff;
-        margin-bottom: 14px;
-    }
-    
-    .numbers span {
-        margin-left: 40px;
-    }
-    
-    .icons .numbers a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-        width: 15%; 
-    }
 
-    @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -28rem;
-        }
-    }
-}
-@media (min-width: 1536px) {
-    
-    .container .story {
-        background-image: url(APATURE\ MESSAGE.gif);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        min-height: 45vh;
-        margin-top: -82px;
-        
-    }
 
-    .services .display{
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 1fr;
-        background-image: url(SERVICES-background.jpg);
-        background-size: contain;
-        background-position: center;
-        padding: 0 1em;
-        overflow-y: hidden;
-    }
-
-    .title .frame {
-        width: 170px;
-        text-align: center;
-    }
-    
-    .services .videos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.5rem 1rem;
-        height: auto;
-        margin: 0 auto;
-        align-self: center;
-        margin-bottom: 10vh;
-    }
-    
-    .icons .numbers p {
-        font-size: 14px;
-        color: #fff;
-    }
-    
-    .icons .numbers a {
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .icons .socials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 5px;
-        width: 9%; 
-    }
-
-    @keyframes drop-down {
-        0% {
-            top: -21rem;
-        }
-    
-        100%{
-            top: -35rem;
-        }
-    }
-}
