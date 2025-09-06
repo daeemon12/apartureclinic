@@ -8,6 +8,16 @@ var video7 = document.getElementById("video-7");
 var video8 = document.getElementById("video-8");
 var video9 = document.getElementById("video-9");
 var video10 = document.getElementById("video-10");
+var video11 = document.getElementById("video-11");
+var video12 = document.getElementById("video-12");
+var video13 = document.getElementById("video-13");
+var video14 = document.getElementById("video-14");
+var video15 = document.getElementById("video-15");
+var video16 = document.getElementById("video-16");
+var video17 = document.getElementById("video-17");
+var video18 = document.getElementById("video-18");
+var video19 = document.getElementById("video-19");
+var video20 = document.getElementById("video-20");
 
 video1.addEventListener("mouseover", function(){
     video1.setAttribute("controls", "controls")
@@ -68,4 +78,64 @@ video10.addEventListener("mouseover", function(){
 })
 video10.addEventListener("mouseout", function(){
     video10.removeAttribute("controls")
+})
+video11.addEventListener("mouseover", function(){
+    video11.setAttribute("controls", "controls")
+})
+video11.addEventListener("mouseout", function(){
+    video11.removeAttribute("controls")
+})
+video12.addEventListener("mouseover", function(){
+    video12.setAttribute("controls", "controls")
+})
+video12.addEventListener("mouseout", function(){
+    video12.removeAttribute("controls")
+})
+video13.addEventListener("mouseover", function(){
+    video13.setAttribute("controls", "controls")
+})
+video13.addEventListener("mouseout", function(){
+    video13.removeAttribute("controls")
+})
+video14.addEventListener("mouseover", function(){
+    video14.setAttribute("controls", "controls")
+})
+video14.addEventListener("mouseout", function(){
+    video14.removeAttribute("controls")
+})
+video15.addEventListener("mouseover", function(){
+    video15.setAttribute("controls", "controls")
+})
+video15.addEventListener("mouseout", function(){
+    video15.removeAttribute("controls")
+})
+video16.addEventListener("mouseover", function(){
+    video16.setAttribute("controls", "controls")
+})
+video16.addEventListener("mouseout", function(){
+    video16.removeAttribute("controls")
+})
+video17.addEventListener("mouseover", function(){
+    video17.setAttribute("controls", "controls")
+})
+video17.addEventListener("mouseout", function(){
+    video17.removeAttribute("controls")
+})
+video18.addEventListener("mouseover", function(){
+    video18.setAttribute("controls", "controls")
+})
+video18.addEventListener("mouseout", function(){
+    video18.removeAttribute("controls")
+})
+video19.addEventListener("mouseover", function(){
+    video19.setAttribute("controls", "controls")
+})
+video19.addEventListener("mouseout", function(){
+    video19.removeAttribute("controls")
+})
+video20.addEventListener("mouseover", function(){
+    video20.setAttribute("controls", "controls")
+})
+video20.addEventListener("mouseout", function(){
+    video20.removeAttribute("controls")
 })
