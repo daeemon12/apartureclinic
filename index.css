@@ -128,6 +128,8 @@ nav {
 .more h1 {
   margin: 0 0 20px 2em;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-container {
