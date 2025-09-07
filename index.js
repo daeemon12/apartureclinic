@@ -139,3 +139,65 @@ video20.addEventListener("mouseover", function(){
 video20.addEventListener("mouseout", function(){
     video20.removeAttribute("controls")
 })
+
+
+
+const carousel = document.getElementById("carousel");
+const videos = carousel.querySelectorAll("video");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const overlay = document.getElementById("overlay");
+const overlayVideo = document.getElementById("overlayVideo");
+const closeBtn = document.getElementById("closeBtn");
+
+let currentIndex = 2; // start from the 3rd video so 3–7 are visible
+const visibleItems = 5;
+const totalItems = videos.length;
+
+function updateCarousel() {
+  const offset = -(currentIndex * (100 / visibleItems));
+  carousel.style.transform = `translateX(${offset}vw)`;
+}
+
+
+nextBtn.addEventListener("click", () => {
+  if (currentIndex < totalItems - visibleItems) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+// Open overlay when video clicked
+videos.forEach(video => {
+  video.addEventListener("click", () => {
+    overlay.style.display = "flex";
+    overlayVideo.src = video.getAttribute("src"); // Load video into overlay
+    overlayVideo.poster = video.getAttribute("poster"); // Keep same thumbnail
+    overlayVideo.play();
+  });
+});
+
+// Close overlay
+function closeOverlay() {
+  overlay.style.display = "none";
+  overlayVideo.pause();
+  overlayVideo.src = ""; // Reset video
+}
+
+closeBtn.addEventListener("click", closeOverlay);
+
+// Close when clicking background
+overlay.addEventListener("click", (e) => {
+  if (e.target === overlay) {
+    closeOverlay();
+  }
+});
+
+updateCarousel();
