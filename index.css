@@ -129,7 +129,7 @@ nav {
 .more {
     background-color: black;
     color: var(--primary-color);
-    padding: 0em 0em;
+    padding: 6em 0em;
 }
 
 .more h1 {
