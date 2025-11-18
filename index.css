@@ -143,6 +143,7 @@ nav {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover; /* ensures the video covers the entire background */
+  filter: brightness(0.5);
 }
 
 .more h1 {
